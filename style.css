@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #92b4ec;
+}
+header h1 {
+  font-weight: bolder;
+  font-size: 4vmax;
+  padding: 0 2vmax;
+  color: #ffffff;
+}
+
+header ul li {
+  display: block;
+  text-align: center;
+}
+
+header ul li a {
+  cursor: pointer;
+  text-decoration: none;
+}
+header ul {
+  display: none;
+}
+.toggle {
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  height: 30%;
+  width: 100%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  border-radius: 10px;
+}
+.toggler span {
+  transition: 0.8s;
+}
+
+header .toggler {
+  width: 8vmax;
+  height: 5vmax;
+  background-color: #ffd24c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 2vmax;
+  border-radius: 4px;
+}
+
+header input {
+  width: 10vmax;
+  height: 8vmax;
+  opacity: 0;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+header .toggler span {
+  width: 50px;
+  height: 4px;
+  background-color: #fff;
+}
+
+hr {
+  margin: 0;
+}
+
+main .landing {
+  background-color: #92b4ec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .landing img {
+  margin-top: 15%;
+  width: 30vmax;
+}
+main .landing h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 8%;
+  padding-bottom: 10px;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product h1 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 3rem;
+}
+.product .class {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product .class img {
+  width: 30vmax;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.about {
+  background-color: #92b4ec;
+}
+.about p {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  padding: 40px 0;
+}
+
+.about aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about aside h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.about aside h5 {
+  color: #fff;
+}
+
+.about aside .profile {
+  width: 30vmax;
+  height: 25vmax;
+  border-radius: 10px;
+  background-image: url(assets/images/profile.png);
+  background-size: cover;
+}
+footer {
+  padding: 50px 0;
+}
+footer .sosial {
+  display: flex;
+  align-items: center;
+  margin-top: 2vmax;
+}
+
+footer h3 {
+  font-size: 2em;
+  margin: 0 2vmax;
+}
+
+footer .sosial img {
+  width: 3vmax !important;
+  margin: 0 2vmax;
+}
+
+@media (min-width: 992px) {
+  header {
+    justify-content: space-between;
+  }
+  header ul {
+    display: flex;
+    margin-right: 50px;
+  }
+  header li {
+    padding: 0 30px;
+    font-size: 2em;
+  }
+  header li a {
+    color: white;
+  }
+
+  header .toggler {
+    display: none;
+  }
+  header #cek {
+    display: none;
+  }
+  .landing {
+    flex-direction: row;
+    padding-bottom: 20px;
+  }
+  .product {
+    padding-bottom: 20px;
+  }
+  .product .class {
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: space-between;
+  }
+
+  .product .class .pro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product .class img {
+    width: 80%;
+  }
+
+  .about {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .about p {
+    font-size: 3em;
+    align-self: center;
+    padding: 0 90px;
+    text-align: start;
+  }
+
+  .about aside {
+    padding-right: 20px;
+    font-size: 2em;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
